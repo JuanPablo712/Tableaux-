@@ -101,6 +101,10 @@ def complemento(l):
 	# Esta función devuelve el complemento de un literal
 	# Input: l, un literal
 	# Output: x, un literal
+	if l.right == None:
+		return Tree('-',None, l)
+	else l.label == '-':
+		return Tree(l,None,None)
 
 	pass
 
